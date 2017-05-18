@@ -6,7 +6,7 @@ import { createPost } from '../actions';
 
 class PostNew extends Component {
   renderField(field) {
-    const { meta: { touched, error } } = field;
+    const { touched, error } = field.meta;
     const className = `form-group ${touched && error ? 'has-danger' : ''}`;
 
     return (
